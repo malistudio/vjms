@@ -1,0 +1,13 @@
+.tooltipster-vjms {
+	border-radius: 5px; 
+	/*border-bottom: 3px solid #96BD0D;  $vjms-green */
+	border-bottom: 3px solid #1AAA8E; /* $vjms-turquoise */
+	/*background: #485258; $vjms-gray */
+	background: #2E3335; /* $vjms-antracit */
+	color: #fff;
+}
+.tooltipster-vjms .tooltipster-content {
+	font-size: 14px;
+	line-height: 16px;
+	padding: 8px 10px;
+}

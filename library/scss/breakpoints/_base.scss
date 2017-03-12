@@ -1,0 +1,1450 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Base Mobile Stylesheet
+
+Be light and don't over style since everything here will be
+loaded by mobile devices. You want to keep it as minimal as
+possible. This is called at the top of the main stylsheet
+and will be used across all viewports.
+
+******************************************************************/
+
+/*********************
+GENERAL STYLES
+*********************/
+
+body {
+	font-family: $sans-serif;
+	font-size: 100%;
+	line-height: 1.750;
+	color: $text-color;
+	background-color: $white;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+}
+
+/********************
+WORDPRESS BODY CLASSES
+style a page via class
+********************/
+
+.rtl {}                           /* for sites that are read right to left (i.e. hebrew) */
+.home {}                          /* home page */
+.blog {}                          /* blog template page */
+.archive {}                       /* archive page */
+.date {}                          /* date archive page */
+	.date-paged-1 {}                /* replace the number to the corresponding page number */
+.search {}                        /* search page */
+	.search-results {}              /* search result page */
+	.search-no-results {}           /* no results search page */
+	.search-paged-1 {}              /* individual paged search (i.e. body.search-paged-3) */
+.error404 {}                      /* 404 page */
+.single {}                        /* single post page */
+	.postid-1 {}                    /* individual post page by id (i.e. body.postid-73) */
+	.single-paged-1 {}              /* individual paged single (i.e. body.single-paged-3) */
+.attachment {}                    /* attatchment page */
+	.attachmentid-1 {}              /* individual attatchment page (i.e. body.attachmentid-763) */
+	.attachment-mime-type {}        /* style mime type pages */
+.author {}                        /* author page */
+	.author-nicename {}             /* user nicename (i.e. body.author-samueladams) */
+	.author-paged-1 {}              /* paged author archives (i.e. body.author-paged-4) for page 4 */
+.category {}                      /* category page */
+	.category-1 {}                  /* individual category page (i.e. body.category-6) */
+	.category-paged-1 {}            /* replace the number to the corresponding page number */
+.tag {}                           /* tag page */
+	.tag-slug {}                    /* individual tag page (i.e. body.tag-news) */
+	.tag-paged-1 {}                 /* replace the number to the corresponding page number */
+.page-template {}                 /* custom page template page */
+	.page-template-page-php {}      /* individual page template (i.e. body.page-template-contact-php */
+	.page-paged-1 {}                /* replace the number to the corresponding page number */
+	.page-parent {}                 /* parent page template */
+	.page-child {}                  /* child page template */
+	.parent-pageid-1 {}             /* replace the number to the corresponding page number */
+.logged-in {}                     /* if user is logged in */
+.paged {}                         /* paged items like search results or archives */
+	.paged-1 {}                     /* individual paged (i.e. body.paged-3) */
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.wrap {
+	width: 96%;
+	margin: 0 auto;
+}
+
+/*********************
+LINK STYLES
+*********************/
+a:before{
+	//content: .transition;
+}
+
+a, a:visited {
+	color: $link-color;
+	text-decoration: none;
+
+	/* on hover */
+	&:hover, &:focus {
+		color: $link-hover;
+	}
+
+	/* on click */
+	&:active {
+
+	}
+
+	/* mobile tap color */
+	&:link {
+		/*
+		this highlights links on iPhones/iPads.
+		so it basically works like the :hover selector
+		for mobile devices.
+		*/
+		-webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
+	}
+}
+
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+	text-rendering: optimizelegibility;
+	font-weight: 400;
+	/*
+	if you're going to use webfonts, be sure to check your weights
+	http://css-tricks.com/watch-your-font-weight/
+	*/
+
+	/* removing text decoration from all headline links */
+	a {
+		text-decoration: none;
+	}
+}
+
+h1, .h1 {
+	font-size: 2.5em;
+	line-height: 1.250em;
+	font-family: 'opensans-light' ;
+	font-weight: 300;
+}
+
+h2, .h2 {
+	font-size: 1em;
+	line-height: 1.750em;
+	font-weight: bold;
+	color: $vjms-turquoise;
+	text-transform: uppercase;
+	margin: 1.33em 0 0.33em;
+}
+
+h3, .h3 {
+	font-size: 1em;
+	line-height: 1.50em;
+	font-style: italic;
+	color: $vjms-turquoise;
+}
+
+h4, .h4 {
+	font-size: 0.875em;
+	line-height: 1.50em;
+	text-transform: uppercase;
+	font-weight: normal;
+	letter-spacing: 2px;
+}
+
+h5, .h5 {
+	font-size: 0.846em;
+	line-height: 2.09em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+/*********************
+HEADER STYLES
+*********************/
+
+.header {
+	background-color: transparent;
+	border-bottom: 1px dotted $vjms-green;
+}
+
+	#logo {
+		margin: 0.75em 0;
+		//background: red;
+		text-align: center;
+
+		a, a:hover {
+			border: none;
+		}
+		img {
+			margin: 0 auto;
+		}
+
+	}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+/*
+all navs have a .nav class applied via
+the wp_menu function; this is so we can
+easily write one group of styles for
+the navs on the site so our css is cleaner
+and more scalable.
+*/
+
+.nav {
+	border-bottom: 0;
+	margin: 0;
+
+	li {
+
+		a {
+			display: block;
+			color: $white;
+			text-decoration: none;
+			padding: 0.75em;
+
+			/*
+			remember this is for mobile ONLY, so there's no need
+			to even declare hover styles here, you can do it in
+			the style.scss file where it's relevant. We want to
+			keep this file as small as possible!
+			*/
+			&:hover, &:focus {
+
+			}
+		}
+
+		&:first-child {}
+
+		&:last-child {}
+
+		/*
+		so you really have to rethink your dropdowns for mobile.
+		you don't want to have it expand too much because the
+		screen is so small. How you manage your menu should
+		depend on the project. Here's some great info on it:
+		http://www.alistapart.com/articles/organizing-mobile/
+		*/
+		ul.sub-menu,
+		ul.children {
+
+			li {
+
+				a {
+					padding-left: 30px;
+
+					&:hover,
+					&:focus {}
+
+					&:link {}
+
+				}
+
+				&:first-child {}
+
+				&:last-child {}
+
+			}
+
+		}
+
+	} /* end .menu li */
+
+	/* highlight current page */
+	li.current-menu-item,
+	li.current_page_item,
+	li.current_page_ancestor {
+
+		a {}
+
+	}  /* end current highlighters */
+
+} /* end .nav */
+
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+
+#content {
+	margin-top: 1.5em;
+}
+
+		.hentry {
+			//background-color: $white;
+			//border-radius: 3px;
+			@include border-radius(3px);
+			margin-bottom: 1.5em;
+			//border: 1px solid $border-color;
+
+			header {
+				border-bottom: 2px dotted $gray;
+				padding: 1.5em;
+			}
+
+			footer {
+				padding: 1.5em;
+				border-top: 2px dotted $gray;
+
+				p {
+					margin: 0;
+				}
+			}
+
+		} /* end .hentry */
+
+		.single-title,
+		.page-title,
+		.entry-title {
+			margin: 0;
+		}
+
+		.single-title {}
+
+		.page-title {}
+
+		.entry-title {}
+
+		.archive-title {}
+
+		/* want to style individual post classes? Booya! */
+		.post-id {}         /* post by id (i.e. post-3) */
+		.post {}            /* general post style */
+		.page {}            /* general article on a page style */
+		.attachment {}      /* general style on an attatchment */
+		.sticky {}          /* sticky post style */
+		.hentry {}          /* hentry class */
+		.category-slug {}   /* style by category (i.e. category-videos) */
+		.tag-slug {}        /* style by tag (i.e. tag-news) */
+
+		/* post meta */
+		.byline {
+			color: $meta-gray;
+			font-style: italic;
+			margin: 0;
+
+			time {}
+		}
+
+		/* entry content */
+		.entry-content {
+			padding: 1.5em 1.5em 0;
+
+			p {
+				margin: 0 0 1.5em;
+			}
+
+			ul, ol, table, dl {}
+
+			ul, ol {
+
+				li {}
+
+			}
+
+			ul {
+
+				li {}
+
+			}
+
+			ol {
+
+				li {}
+
+			}
+
+			table {
+				width: 100%;
+				border: 1px solid $gray;
+				margin-bottom: 1.5em;
+
+				caption {
+					margin: 0 0 7px;
+					font-size: 0.75em;
+					color: $meta-gray;
+					text-transform: uppercase;
+					letter-spacing: 1px;
+				}
+			}
+
+			tr {
+				border-bottom: 1px solid $gray;
+
+				&:nth-child(even) {
+					background-color: $light-gray;
+				}
+			}
+
+			td {
+				padding: 7px;
+				border-right: 1px solid $gray;
+
+				&:last-child {
+					border-right: 0;
+				}
+			}
+
+			th {
+				background-color: $light-gray;
+				border-bottom: 1px solid $gray;
+				border-right: 1px solid $gray;
+
+				&:last-child {
+					border-right: 0;
+				}
+			}
+
+			blockquote {
+				margin: 0 0 1.5em 0.75em;
+				padding: 0 0 0 0.75em;
+				border-left: 3px solid $vjms-turquoise;
+				font-style: italic;
+				color: $meta-gray;
+				
+				&:before {
+					font-family: 'dashicons';
+					content: "\f205";
+					display: inline-block;
+					-webkit-font-smoothing: antialiased;
+					font: normal 3.4em 'dashicons';
+					line-height: 1em;
+					color: $white;
+					vertical-align:  top;
+					margin: 0 0 -2em -1.05em;
+					padding: 0.3em;
+					background: lighten($vjms-gray, 55%);
+					//background: rgba(230,232,234,0.95);
+					//border-radius(10px);
+					@include border-radius(50%);
+				}
+				& cite {
+					font-weight: bold;
+					font-style: normal;
+					color: $vjms-gray;
+					border-top: 2px dotted $gray;
+				}
+				& h3 {
+					-webkit-margin-before: -1em;
+					-webkit-margin-after: 1em;
+					-webkit-margin-start: 0px;
+					-webkit-margin-end: 0px;
+					border-bottom: 2px dotted $gray;
+				}
+
+			}
+
+			dl {}
+
+			dt {}
+
+			dd {
+				margin-left: 0;
+				font-size: 0.9em;
+				color: #787878;
+				margin-bottom: 1.5em;
+			}
+
+			img {
+				margin: 0 0 1.5em 0;
+				max-width: 100%;
+				height: auto;
+			}
+
+			/*
+			image alignment on a screen this size may be
+			a bit difficult. It's set to start aligning
+			and floating images at the next breakpoint,
+			but it's up to you. Feel free to change it up.
+			*/
+			.alignleft, img.alignleft {}
+			.alignright, img.alignright {}
+			.aligncenter, img.aligncenter {}
+
+			.size-auto,
+			.size-full,
+			.size-large,
+			.size-medium,
+			.size-thumbnail {
+				max-width: 100%;
+				height: auto;
+			}
+
+			pre {
+				background: $black;
+				color: $light-gray;
+				font-size: 0.9em;
+				padding: 1.5em;
+				margin: 0 0 1.5em;
+				//border-radius: 3px;
+				@include border-radius(3px);
+			}
+
+		} /* end .entry-content */
+
+		.wp-caption {
+			max-width: 100%;
+			background: #eee;
+			padding: 5px;
+
+			/* images inside wp-caption */
+			img {
+				max-width: 100%;
+				margin-bottom: 0;
+				width: 100%;
+			}
+
+			p.wp-caption-text {
+				font-size: 0.85em;
+				margin: 4px 0 7px;
+				text-align: center;
+			}
+
+		} /* end .wp-caption */
+
+		/* image gallery styles */
+		.gallery {
+
+			dl {
+
+				a {}
+
+				img {}
+
+			}
+
+			dt {}
+
+			dd {}
+
+		} /* end .gallery */
+
+		/* gallery caption styles */
+		.gallery-caption {}
+
+		.size-full {}
+		.size-large {}
+		.size-medium {}
+		.size-thumbnail {}
+
+	// the tag output
+	.tags {
+		margin: 0;
+	}
+
+/******************************************************************
+PAGE NAVI STYLES
+******************************************************************/
+
+.pagination,
+.wp-prev-next {
+	margin: 1.5em 0;
+}
+	.pagination{
+    text-align: center;
+
+    ul {
+      display: inline-block;
+      background-color: $white;
+      white-space: nowrap;
+      padding: 0;
+      clear: both;
+      //border-radius: 3px;
+      @include border-radius(3px);
+    }
+
+    li {
+      padding: 0;
+      margin: 0;
+      float: left;
+      display: inline;
+      overflow: hidden;
+      border-right: 1px solid $gray;
+    }
+
+    a, span {
+      margin: 0;
+      text-decoration: none;
+      padding: 0;
+      line-height: 1em;
+      font-size: 1em;
+      font-weight: normal;
+      padding: 0.75em;
+      min-width: 1em;
+      display: block;
+      color: $vjms-green;
+
+      &:hover, &:focus {
+      	background-color: $vjms-green;
+      	color: $white;
+      	//@include border-radius(3px);
+      }
+    }
+
+    .current{
+    	cursor: default;
+    	color: $text-color;
+
+    	&:hover, &:focus {
+    		background-color: $white;
+    		color: $text-color;
+    	}
+    }
+
+  } /* end .bones_page_navi */
+
+	/* fallback previous & next links */
+	.wp-prev-next {
+
+		ul {}
+
+		.prev-link {
+			float: left;
+		}
+
+		.next-link {
+			float: right;
+		}
+
+	} /* end .wp-prev-next */
+
+/******************************************************************
+COMMENT STYLES
+******************************************************************/
+
+/* h3 comment title */
+#comments-title {
+	padding: 0.75em;
+	margin: 0;
+	border-top: 2px dotted $gray;
+
+	/* number of comments span */
+	span {}
+
+}
+
+.comment-nav {
+
+	ul {
+
+		li {}
+
+	}
+}
+
+
+.commentlist {
+	margin: 0;
+	list-style-type: none;
+}
+
+.comment {
+	position: relative;
+	clear: both;
+	overflow: hidden;
+	padding: 1.5em;
+	border-bottom: 1px solid $light-gray;
+
+	.comment-author {
+		padding: 7px;
+		border: 0;
+	}
+
+	/* vcard */
+	.vcard {
+		margin-left: 50px;
+
+		cite.fn {
+			font-weight: 700;
+			font-style: normal;
+
+			a.url {}
+
+		}
+
+		time {
+			display: block;
+			font-size: 0.9em;
+			font-style: italic;
+
+			a {
+				color: $meta-gray;
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
+
+			}
+
+		}
+
+		.photo {}
+
+		.avatar {
+			position: absolute;
+			left: 16px;
+			//border-radius: 50%;
+			@include border-radius(50%);
+		}
+
+	} /* end .commentlist .vcard */
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	.children {
+		margin: 0;
+
+		li {}
+
+			/* variations */
+			.comment {}
+			.alt {}
+			.odd {}
+			.even {}
+			.depth-1 {}           /* change number for different depth */
+			.byuser {}
+			.bypostauthor {}
+			.comment-author-admin {}
+
+	} /* end children */
+
+
+	&[class*=depth-] {
+		margin-top: 1.1em;
+	}
+
+	&.depth-1 {
+		margin-left: 0;
+		margin-top: 0;
+	}
+
+	&:not(.depth-1) {
+		margin-top: 0;
+		margin-left: 7px;
+		padding: 7px;
+	}
+
+	&.depth-2 {}
+	&.depth-3 {}
+	&.depth-4 {}
+	&.depth-5 {}
+
+	/* general comment classes */
+	&.alt {}
+	&.odd {
+		background-color: $white;
+	}
+	&.even {
+		background: $light-gray;
+	}
+	&.parent {}
+	&.comment {}
+	&.children {}
+	&.pingback {}
+	&.bypostauthor {}
+	&.comment-author {}
+	&.comment-author-admin {}
+	&.thread-alt {}
+	&.thread-odd {}
+	&.thread-even {}
+}
+
+
+
+
+	/* comment meta */
+	.comment-meta {
+
+		a {}
+
+	}
+
+	.commentmetadata {
+
+		a {}
+
+	}
+
+	/* comment content */
+	.comment_content {
+
+		p {
+			margin: 0.7335em 0 1.5em;
+			font-size: 1em;
+			line-height: 1.5em;
+		}
+
+	} /* end .commentlist .comment_content */
+
+	/* comment reply link */
+	.comment-reply-link {
+		//@extend .blue-btn;
+		font-size: 0.9em;
+		float: right;
+
+		&:hover,
+		&:focus {
+		}
+
+	} /* end .commentlist .comment-reply-link */
+
+	/* edit comment link */
+	.comment-edit-link {
+		font-style: italic;
+		margin: 0 7px;
+		text-decoration: none;
+		font-size: 0.9em;
+	}
+
+
+
+/******************************************************************
+COMMENT FORM STYLES
+******************************************************************/
+
+.comment-respond {
+	@extend .cf;
+	padding: 1.5em;
+	border-top: 1px solid $light-gray;
+}
+
+	#reply-title {
+		margin: 0;
+	}
+
+	.logged-in-as {
+		color: $meta-gray;
+		font-style: italic;
+		margin: 0;
+
+		a {
+			color: $text-color;
+		}
+	}
+
+	.comment-form-comment {
+		margin: 1.5em 0 0.75em;
+	}
+
+	.form-allowed-tags {
+		padding: 1.5em;
+		background-color: $light-gray;
+		font-size: 0.9em;
+		display: none;
+	}
+
+	/* comment submit button */
+	#submit {
+		@extend .vjms-green-btn;
+		float: right;
+		//font-size: 1em;
+	}
+
+	/* comment form title */
+	#comment-form-title {
+		margin: 0 0 1.1em;
+	}
+
+	/* cancel comment reply link */
+	#cancel-comment-reply {
+		a {}
+	}
+
+	/* logged in comments */
+	.comments-logged-in-as {}
+
+	/* allowed tags */
+	#allowed_tags {
+		margin: 1.5em 10px 0.7335em 0;
+	}
+
+	/* no comments */
+	.nocomments {
+		margin: 0 20px 1.1em;
+	}
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+
+.sidebar {}
+
+	.widgettitle {}
+
+	.widget {
+
+		ul {
+
+			li {
+
+				&:first-child {}
+
+				&:last-child {}
+
+				a {}
+
+				/* deep nesting */
+				ul {}
+
+			}
+
+		}
+
+	}
+
+	.no-widgets {
+		background-color: $white;
+		padding: 1.5em;
+		text-align: center;
+		border: 1px solid $border-color;
+		//border-radius: 2px;
+		@include border-radius(2px);
+		margin-bottom: 1.5em;
+	}
+
+	/* text widget */
+	.textwidget { //padding: 0 0.5em;
+		& .dashicons {
+			display: inline;
+			-webkit-font-smoothing: antialiased;
+			font: normal 4em 'dashicons';
+			line-height: 1em;
+			color: lighten($vjms-gray, 55%);
+			vertical-align:  top;
+			margin: 0;
+		}
+	}
+
+/*********************
+FOOTER STYLES
+*********************/
+
+.footer {
+	clear: both;
+	background-color: $black;
+	color: $light-gray;
+}
+
+	/*
+	if you checked out the link above:
+	http://www.alistapart.com/articles/organizing-mobile/
+	you'll want to style the footer nav
+	a bit more in-depth. Remember to keep
+	it simple because you'll have to
+	override these styles for the desktop
+	view.
+	*/
+	.footer-links {
+
+		ul {
+
+			li {}
+
+		}
+
+	} /* end .footer-links */
+
+
+	.copyright {}
+
+/*********************
+VJMS CLASSES
+*********************/
+/*--- Helpers ---*/
+::selection {
+	color: $white;
+	background: $vjms-turquoise;
+}
+
+/*--- Tooltip ---*/
+
+
+
+/*--- Header elements ---*/
+.vjms-social-holder{
+	float: left;
+	margin: 0.5em 0 0.5em 1.3em;
+	position: relative;
+	padding-left: 3em;
+	.dashicons {
+		display: inline;
+		-webkit-font-smoothing: antialiased;
+		font: normal 1em 'dashicons';
+		line-height: 2em;
+		color: #fff;
+		background: $vjms-green;
+		//border-radius: 50%;
+		@include border-radius(50%);
+		padding: 0.5em;
+		margin: 0.5em ;
+		vertical-align:  baseline;
+		position: relative;
+		
+	}
+	a .dashicons {
+			background: $link-color;
+			@include transition (0.7s);
+		}
+	a:hover .dashicons {
+			background: $vjms-gray;
+			@include transition (0.7s);
+		}
+}
+
+/* ---- HTML5 MOBILE SEARCH -----------*/
+
+  .vjms-social-holder>.search-form {
+    float: right;
+    margin: 0 0.5em;
+    //position: absolute;
+    display:visible;
+    font-size: 0.85em;
+    line-height: 0.5em;
+    .screen-reader-text {color:#fff; display:none;}
+    :hover{}
+  }
+
+  .vjms-social-holder .search-field {
+    background-color: transparent;
+    background-image: url(../images/search-icon-gray.svg);
+    background-position: 2px 2px;
+    background-repeat: no-repeat;
+    border: 2px dotted transparent;
+    @include box-sizing(border-box);
+    cursor: pointer;
+    height: 38px;
+    margin: -8px 0 ;
+    padding: 0 0 0 40px;
+    -webkit-transition: width 300ms ease, background 300ms ease;
+    transition:         width 300ms ease, background 300ms ease;
+    width: 0;
+    height: 40px;
+    display: inline !important;
+    display:visible;
+    position: absolute;
+    left: 0px;
+    top: 4px;
+    z-index: 100;
+  }
+
+  .vjms-social-holder .search-field:focus {
+    background-color: rgba(255,255,255,1);
+    background-image: url(../images/search-icon-green.svg);
+    border: 2px dotted $vjms-green;
+    cursor: text;
+    outline: 0;
+    padding: 0 0 0 40px;
+    width: 250px;
+    display:visible;
+    .screen-reader-text { 
+    display:none;
+    }
+  }
+  .search-form
+  .search-submit { 
+  display:none;
+  }
+
+.vjms-nav-holder {
+	border-top: 1px dotted $vjms-green;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box
+}
+/* Slimmenu */
+.menu-collapser {
+    position: relative;
+    text-align: center;
+    background-color: $white;
+    color: $vjms-green;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    font-size: 16px;
+    padding: 0 8px;
+    
+}
+.collapse-button {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    width: 40px;
+    background-color: $white;
+    //border-radius: 3px;
+    @include border-radius(3px);
+    border: 1px solid $vjms-green;
+    padding: 7px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    @include transition (0.3s);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box
+}
+.collapse-button:hover, .collapse-button:focus {
+    background-image: none;
+    background-color: $vjms-gray;
+    border: 1px solid $vjms-gray;
+    color: $white;
+    @include transition (0.3s);
+    &:active {
+    	background-color: $black;
+    }
+}
+
+.collapse-button .icon-bar {
+	&:before{
+		font-family: "dashicons";
+		content: "\f333";
+		color: $vjms-green;
+		display: inline-block;
+		position: relative;
+		-webkit-font-smoothing: antialiased;
+		font: normal 20px/1 'dashicons';
+		vertical-align: top;
+		@include transition (0.2s);
+	}
+    display: block;
+    height: 20px;
+    width: 20px;
+    &:active {
+    	-webkit-transform: rotate(-90deg);
+		  -moz-transform:  rotate(-90deg);
+		  -ms-transform:   rotate(-90deg);
+		  -o-transform:    rotate(-90deg);
+		  transform:       rotate(-90deg);
+		  @include transition (0.2s);
+    }
+}
+
+ul.slimmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+ul.slimmenu li {
+    position: relative;
+    display: inline-block;
+    background-color:$white;
+}
+ul.slimmenu > li { margin-right: -5px; }
+ul.slimmenu > li:first-child { border-left: 0 }
+ul.slimmenu > li:last-child { margin-right: 0 }
+ul.slimmenu li a {
+    display: block;
+    color: $link-color;
+    padding: 12px 64px 12px 16px;
+    font-size: 1em;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -webkit-transition: background-color 0.5s ease-out;
+}
+ul.slimmenu li a:hover {
+    background-color: $vjms-green;
+    text-decoration: none;
+    color: $white;
+}
+ul.slimmenu li .sub-collapser {
+    background: none repeat scroll 0 0 rgba(150, 189, 13, 0.275);
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    width: 40px;
+    height: 100%;
+    text-align: center;
+    z-index: 999;
+    cursor: pointer;
+    //border-radius: 50%;
+    @include border-radius(50%);
+}
+ul.slimmenu li .sub-collapser:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;
+}
+ul.slimmenu li .sub-collapser > i {
+    color: $vjms-green;
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 0 0 4px;
+}
+ul.slimmenu li ul {
+    margin: 0;
+    list-style-type: none;
+}
+ul.slimmenu li ul li { background-color: lighten($vjms-gray, 60%); }
+ul.slimmenu li > ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 1999;
+    width: 100%;
+}
+ul.slimmenu li > ul > li ul {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+ul.slimmenu.collapsed li {
+    display: block;
+    width: 100%;
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box
+}
+ul.slimmenu.collapsed li a {
+    display: block;
+    border-bottom: 1px dotted rgba(20, 20, 20, 0.25);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box
+}
+ul.slimmenu.collapsed li .sub-collapser {
+    height: 40px;
+}
+ul.slimmenu.collapsed li > ul {
+    display: none;
+    position: static;
+}
+
+.balls {
+  height: 100%;
+  width: 100%;
+  //background: rgba(100,100,100,0.5);
+}
+.balls b {
+  //border-radius: 50%;
+  @include border-radius(50%);
+}
+
+.vjms-hero {
+	background-color: $vjms-green;
+	margin: -1.5em 0 0 0;
+	.vjms-hero-txt {
+		color: $white;
+		text-align: center;
+		line-height: 2.25em;
+		padding: 0 0.25em;
+		.bigline{
+			font-size: 3.5em;
+			line-height: 1.25em;
+			font-family: 'opensans-light' ;
+			font-weight: 300; 
+		}
+		.intro{
+			font-size: 2em;
+			line-height: 1.85em;
+			font-family: 'opensans-light' ;
+			font-weight: 300; 	
+		}
+	}
+}
+
+.vjms-portrait-holder {
+	text-align: center;
+	img {
+		margin: 0.5em auto;
+		display: block;
+		max-width: 100%;
+		height: auto;
+		cursor: help;
+	}
+}
+
+.vjms-portrait-404 {
+	text-align: center;
+	img {
+		margin: 0 auto 1em;
+		display: block;
+		max-width: 100%;
+		height: auto;
+		cursor: help;
+	}
+}
+
+.vjms-portfolio-item{
+	header {
+				border-bottom: 2px dotted $gray;
+				padding: 0.5em;
+				.dashicons {
+					display: inline;
+					-webkit-font-smoothing: antialiased;
+					font: normal 40px 'dashicons';
+					line-height: 1em;
+					color: $gray;
+					vertical-align: top;
+					margin: -16px 50%;
+					float: right;	
+				}
+			}
+
+	.entry-content {
+				padding: 1em 1.5em 0 1.5em;
+				p {
+					margin: 0 0 1em;
+					font-size: 0.875em;
+				}
+		}		
+
+	footer {
+				padding: 0;
+				border-top: 2px dotted $gray;
+			}
+}
+
+.vjms-portfolio-thumb {
+	//border-radius: 50%;
+	@include border-radius(50%);
+	border: 2px dotted $vjms-gray;
+	max-width: 100%;
+	height: auto;
+	position: relative;
+	margin: 0 auto !important;
+	padding: 10px;
+	cursor: pointer;
+	@include transition (0.5s);
+	&:hover {
+		background: $vjms-green;
+		border: 2px dotted $white;
+		transform: scale(1.1,1.1);
+		//transform: rotate(-15deg);
+		@include transition (0.5s);
+
+	}
+}
+.vjms-archive-thumb {
+	border: 2px dotted $gray;
+	max-width: 100%;
+	height: auto;
+	float: left;
+	padding: 0.5em;
+	margin-bottom: 1.5em;
+	cursor: pointer;
+	@include box-sizing(border-box);
+	@include transition (0.7s);
+	&:hover {
+		background: $vjms-green;
+		border: 2px dotted $white;
+		//transform: scale(1.1,1.1);
+		@include transition (0.7s);
+
+	}
+	& img {
+		margin: 0 0 -6px;
+	}
+}
+
+.vjms-archive-article {
+	& btn {
+		margin: 0 0.5em 1.5em 0;
+	}
+	& .article-footer{
+		padding: 0 1.5em;
+	}
+}
+
+.vjms-contact-links {
+	ul li a{
+		margin: 1em 0;
+		padding: 0 0.5em;
+		max-width: 300px;
+		font-size: 1.5em;
+		display: block;
+		background: $vjms-green;
+		color: $white;
+		@include border-radius(3px);
+		@include transition (0.7s);
+		.dashicons {
+			display: inline;
+			-webkit-font-smoothing: antialiased;
+			font: normal 30px/2.5 'dashicons';
+			vertical-align: middle;
+			padding: 0.3em;
+			margin-right: 0.5em;
+			color: $white;
+			border: 2px dotted $white;
+			@include border-radius(50%);
+			@include transition (0.7s);
+		}
+		.vjms-contact-num {
+			font-size: 0.725em;
+		}
+	}
+	ul li a:hover {
+			background: $vjms-gray;
+			color: $white;
+			@include transition (0.7s);
+			.dashicons {
+				margin-right: 0;
+				@include transition (0.7s);
+			}
+		}
+}
+
+.vjms-previous-post {
+	float: left;
+}
+
+.vjms-next-post {
+	float: right;
+}
+
+.vjms-prefooter {
+	background: lighten($vjms-gray, 50%);
+	text-align: center;
+	& .vjms-prefooter-logo {
+		background: lighten($vjms-gray, 54%);
+		display: inline-block;
+		//border-radius: 50%;
+		@include border-radius(50%);
+		width: 50px;
+		height: 50px;
+		margin: 0 1em 1em;
+		@include transition (0.7s);
+		&:hover{
+			background: lighten($vjms-gray, 25%);
+			@include transition (0.7s);
+		}
+	}
+	
+}
+
+.animatedElement-1, .animatedElement-2{
+	font-family: 'opensans-light', $sans-serif ;
+	font-size: 2.5em; 
+	line-height: 0.9em;
+	visibility: hidden;
+	display: none;
+}
+

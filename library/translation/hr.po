@@ -1,0 +1,473 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-08 21:53+0100\n"
+"PO-Revision-Date: 2015-02-08 21:54+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Eazy Po 0.9.5.2\n"
+
+#: 404.php:13
+msgid "Epic 404 - Article Not Found"
+msgstr "Epski 404 - Članak nije pronađen"
+
+#: 404.php:19
+msgid ""
+"The content you were looking for was not found, but maybe try looking again."
+msgstr "Sadržaj koji ste tražili nije pronađen. Pokušajte s novom pretragom."
+
+#: 404.php:39
+msgid "What happened here?"
+msgstr "Što se dogodilo?"
+
+#: archive-portfolio.php:23
+msgid "View full project"
+msgstr "Pogledaj projekt"
+
+#: archive-portfolio.php:52 archive.php:95 index.php:68
+#: OLD_archive-portfolio.php:58 page-vjmswelcome.php:75 page.php:55
+#: single-portfolio.php:89 single.php:34 taxonomy-custom_cat.php:57
+msgid "Oops, Post Not Found!"
+msgstr "Hm... Post nije pronađen."
+
+#: archive-portfolio.php:55 archive.php:98 index.php:71
+#: OLD_archive-portfolio.php:61 page-vjmswelcome.php:78 page.php:58
+#: single-portfolio.php:92 single.php:37 taxonomy-custom_cat.php:60
+msgid "Uh Oh. Something is missing. Try double checking things."
+msgstr "Nešto nedostaje. Dobro provjerite."
+
+#: archive-portfolio.php:58 OLD_archive-portfolio.php:64
+msgid "This is the error message in the custom posty type archive template."
+msgstr "Ovo je poruka greške u predlošku arhive prilagođenog post tipa."
+
+#: archive.php:11 taxonomy-custom_cat.php:23
+msgid "Posts Categorized:"
+msgstr "Postovi kategorizirani:"
+
+#: archive.php:16
+msgid "Posts Tagged:"
+msgstr "Postovi označeni:"
+
+#: archive.php:25
+msgid "Posts By:"
+msgstr "Postovi od:"
+
+#: archive.php:30
+msgid "Daily Archives:"
+msgstr "Dnevne arhive:"
+
+#: archive.php:35
+msgid "Monthly Archives:"
+msgstr "Mjesečne arhive:"
+
+#: archive.php:40
+msgid "Yearly Archives:"
+msgstr "Godišnje arhive:"
+
+#: archive.php:50 archive.php:65 archive.php:73 index.php:15 index.php:32
+#: index.php:45
+msgid "View full story"
+msgstr "Pogledaj cijeli članak"
+
+#: archive.php:52 index.php:17 search.php:19 post-formats/format-aside.php:10
+#: post-formats/format-audio.php:10 post-formats/format-chat.php:10
+#: post-formats/format-gallery.php:10 post-formats/format-image.php:10
+#: post-formats/format-link.php:10 post-formats/format-quote.php:10
+#: post-formats/format-status.php:10 post-formats/format-video.php:10
+#: post-formats/format.php:25
+#, php-format
+msgid "Posted %1$s by %2$s"
+msgstr "Objavljeno %1$s autor %2$s"
+
+#: archive.php:76 index.php:48
+msgid "More..."
+msgstr "Više..."
+
+#: archive.php:101
+msgid "This is the error message in the archive.php template."
+msgstr "Ovo je poruka greške u predlošku archive.php."
+
+#: comments.php:17
+msgid "<span>No</span> Comments"
+msgstr "<span>Nema</span> komentara"
+
+#: comments.php:17
+msgid "<span>One</span> Comment"
+msgstr "<span>Jedan</span> komentar"
+
+#: comments.php:17
+msgid "<span>%</span> Comments"
+msgstr "<span>%</span> komentara"
+
+#: comments.php:38
+msgid "&larr; Previous Comments"
+msgstr "&larr; Prijašnji komentari"
+
+#: comments.php:39
+msgid "More Comments &rarr;"
+msgstr "Više komentara &rarr;"
+
+#: comments.php:44
+msgid "Comments are closed."
+msgstr "Komentiranje zatvoreno."
+
+#: footer.php:4
+msgid "Back to top"
+msgstr "Natrag na vrh"
+
+#: footer.php:11 library/bones.php:215
+msgid "Footer Links"
+msgstr "Footer linkovi"
+
+#: footer.php:24
+msgid "This website is using cookies for analytics."
+msgstr "Ova web stranica koristi cookies tehnologiju za praćenje statistike posjeta."
+
+#: functions.php:107
+msgid "300px × 300px"
+msgstr "300px × 300px"
+
+#: functions.php:108
+msgid "300px × 180px"
+msgstr "300px × 180px"
+
+#: functions.php:163
+msgid "Sidebar 1"
+msgstr "Bočna traka 1"
+
+#: functions.php:164
+msgid "The first (primary) sidebar."
+msgstr "Prva (primarna) bočna traka."
+
+#: functions.php:219
+#, php-format
+msgid "<cite class=\"fn\">%1$s</cite> %2$s"
+msgstr "<cite class=\"fn\">%1$s</cite> %2$s"
+
+#: functions.php:219
+msgid "(Edit)"
+msgstr "(Uredi)"
+
+#: functions.php:220 OLD_archive-portfolio.php:33 taxonomy-custom_cat.php:33
+msgid "F jS, Y"
+msgstr "F jS, Y"
+
+#: functions.php:225
+msgid "Your comment is awaiting moderation."
+msgstr "Vaš komentar čeka odobrenje."
+
+#: header.php:69 header.php:70
+msgid "Search for:"
+msgstr "Traži:"
+
+#: header.php:70
+msgid "Search..."
+msgstr "Traži..."
+
+#: header.php:82 library/bones.php:214
+msgid "The Main Menu"
+msgstr "Glavni Izbornik"
+
+#: index.php:74
+msgid "This is the error message in the index.php template."
+msgstr "Ovo je poruka greške u predlošku index.php."
+
+#: OLD_archive-portfolio.php:33
+#, php-format
+msgid ""
+"Posted <time class=\"updated\" datetime=\"%1$s\" itemprop=\"datePublished\">"
+"%2$s</time> by <span class=\"author\">%3$s</span>"
+msgstr ""
+"Objavljeno <time class=\"updated\" datetime=\"%1$s\" itemprop=\""
+"datePublished\">%2$s</time> autor <span class=\"author\">%3$s</span>"
+
+#: page-vjmswelcome.php:23
+msgid "From ideas to ideal"
+msgstr "Od ideja do idealnog"
+
+#: page-vjmswelcome.php:24
+msgid "Want a great website? Original logo, slogan or creative ad?"
+msgstr "Želite sjajnu web stranicu koju voli i Google? Originalan logo, slogan ili kreativnu reklamu?"
+
+#: page-vjmswelcome.php:25
+msgid "Ladies and Gentlemen..."
+msgstr "Dame i Gospodo..."
+
+#: page-vjmswelcome.php:57 page.php:37 single-portfolio.php:54
+#: post-formats/format-aside.php:38 post-formats/format-audio.php:38
+#: post-formats/format-chat.php:38 post-formats/format-gallery.php:38
+#: post-formats/format-image.php:38 post-formats/format-link.php:38
+#: post-formats/format-quote.php:38 post-formats/format-status.php:38
+#: post-formats/format-video.php:38 post-formats/format.php:54
+msgid "Pages:"
+msgstr "Stranice:"
+
+#: page-vjmswelcome.php:65
+msgid "Yep, that's me!"
+msgstr "Da, to sam ja!"
+
+#: page-vjmswelcome.php:66
+msgid "Contact me"
+msgstr "Kontaktirajte me"
+
+#: page-vjmswelcome.php:66
+msgid "Contact"
+msgstr "Kontakt"
+
+#: page-vjmswelcome.php:81
+msgid "This is the error message in the page-custom.php template."
+msgstr "Ovo je poruka greške u predlošku page-custom.php."
+
+#: page-vjmswelcome.php:96
+msgid "- I like them, and I trust them -"
+msgstr "- Oni kojima vjerujem -"
+
+#: page.php:61
+msgid "This is the error message in the page.php template."
+msgstr "Ovo je poruka greške u predlošku page.php."
+
+#: search.php:8
+msgid "Search Results for:"
+msgstr "Rezultati pretrage za:"
+
+#: search.php:30 library/bones.php:290
+msgid "Read more &raquo;"
+msgstr "Nastavi čitati &raquo;"
+
+#: search.php:37 post-formats/format-link.php:48
+#: post-formats/format-quote.php:48 post-formats/format.php:66
+#, php-format
+msgid "Filed under: %1$s"
+msgstr "Objavljeno u: %1$s"
+
+#: search.php:40 post-formats/format-aside.php:47
+#: post-formats/format-audio.php:47 post-formats/format-chat.php:47
+#: post-formats/format-gallery.php:47 post-formats/format-image.php:47
+#: post-formats/format-link.php:50 post-formats/format-quote.php:50
+#: post-formats/format-status.php:47 post-formats/format-video.php:47
+#: post-formats/format.php:68
+msgid "Tags:"
+msgstr "Oznake:"
+
+#: search.php:54
+msgid "Sorry, No Results."
+msgstr "Žalim, nema rezultata."
+
+#: search.php:57
+msgid "Try your search again."
+msgstr "Pokušajte ponoviti pretragu."
+
+#: sidebar.php:16
+msgid "This is a widget ready area. Add some and they will appear here."
+msgstr "Ovo je widget spremno područje. Dodaj neke i pojavit će se ovdje."
+
+#: single-portfolio.php:63 post-formats/format.php:74
+msgid "Previous post"
+msgstr "Prijašnja objava"
+
+#: single-portfolio.php:66 post-formats/format.php:77
+msgid "Next post"
+msgstr "Slijedeća objava"
+
+#: single-portfolio.php:73
+msgid "Custom Tags:"
+msgstr "Prilagođene Oznake:"
+
+#: single-portfolio.php:95
+msgid "This is the error message in the single-custom_type.php template."
+msgstr "Ovo je poruka greške u predlošku single-custom_type.php."
+
+#: single.php:40
+msgid "This is the error message in the single.php template."
+msgstr "Ovo je poruka greške u predlošku single.php."
+
+#: taxonomy-custom_cat.php:33
+#, php-format
+msgid ""
+"Posted <time class=\"updated\" datetime=\"%1$s\" itemprop=\"datePublished\">"
+"%2$s</time> by <span class=\"author\">%3$s</span> <span class=\"amp\">&</"
+"span> filed under %4$s."
+msgstr ""
+"Objavljeno <time class=\"updated\" datetime=\"%1$s\" itemprop=\""
+"datePublished\">%2$s</time> autor <span class=\"author\">%3$s</span> <span "
+"class=\"amp\">&</span> u %4$s."
+
+#: taxonomy-custom_cat.php:39
+msgid "Read More &raquo;"
+msgstr "Nastavi čitati &raquo;"
+
+#: taxonomy-custom_cat.php:63
+msgid "This is the error message in the taxonomy-custom_cat.php template."
+msgstr "Ovo je poruka greške u predlošku taxonomy-custom_cat.php"
+
+#: library/admin.php:82
+msgid "j F Y @ g:i a"
+msgstr "j F Y @ g:i a"
+
+#: library/admin.php:94
+msgid "Recently on Themble (Customize on admin.php)"
+msgstr "Najnovije sa Themble (Prilagodi u admin.php)"
+
+#: library/admin.php:141
+msgid ""
+"<span id=\"footer-thankyou\">Developed by <a href=\"http://malistudio.com\" "
+"target=\"_blank\">mali studio</a></span>."
+msgstr ""
+"<span id=\"footer-thankyou\">Developed by <a href=\"http://malistudio.com\" "
+"target=\"_blank\">mali studio</a></span>."
+
+#: library/bones.php:80
+#, php-format
+msgid "Page %s"
+msgstr "Stranica %s"
+
+#: library/bones.php:245
+msgid "No Related Posts Yet!"
+msgstr "Još nema srodnih postova!"
+
+#: library/bones.php:290
+msgid "Read "
+msgstr "Pročitaj"
+
+#: library/portfolio-post-type.php:31
+msgid "Portfolio"
+msgstr "Portfolio"
+
+#: library/portfolio-post-type.php:32
+msgid "Portfolio Post"
+msgstr "Portfolio Post"
+
+#: library/portfolio-post-type.php:33
+msgid "All Portfolio Posts"
+msgstr "Svi Portfolio Postovi"
+
+#: library/portfolio-post-type.php:34
+msgid "Add New"
+msgstr "Dodaj novi"
+
+#: library/portfolio-post-type.php:35
+msgid "Add New Portfolio Post"
+msgstr "Dodaj novi Portfolio Post"
+
+#: library/portfolio-post-type.php:36
+msgid "Edit"
+msgstr "Uredi"
+
+#: library/portfolio-post-type.php:37
+msgid "Edit Portfolio Post"
+msgstr "Uredi Portfolio Post"
+
+#: library/portfolio-post-type.php:38
+msgid "New Portfolio Post"
+msgstr "Novi Portfolio Post"
+
+#: library/portfolio-post-type.php:39
+msgid "View Portfolio Post"
+msgstr "Pogledaj Portfolio Post"
+
+#: library/portfolio-post-type.php:40
+msgid "Search Portfolio Post"
+msgstr "Traži Portfolio Post"
+
+#: library/portfolio-post-type.php:41
+msgid "Nothing found in the Database."
+msgstr "Ništa nije pronađeno u Bazi podataka."
+
+#: library/portfolio-post-type.php:42
+msgid "Nothing found in Trash"
+msgstr "Ništa nije pronađeno u Smeću."
+
+#: library/portfolio-post-type.php:45
+msgid "This is the portfolio post type"
+msgstr "Ovo je portfolio post tip"
+
+#: library/portfolio-post-type.php:82
+msgid "Portfolio Categories"
+msgstr "Portfolio Kategorije"
+
+#: library/portfolio-post-type.php:83
+msgid "Portfolio Category"
+msgstr "Portfolio Kategorija"
+
+#: library/portfolio-post-type.php:84
+msgid "Search Portfolio Categories"
+msgstr "Pretraži Portfolio Kategorije"
+
+#: library/portfolio-post-type.php:85
+msgid "All Portfolio Categories"
+msgstr "Sve Portfolio Kategorije"
+
+#: library/portfolio-post-type.php:86
+msgid "Parent Portfolio Category"
+msgstr "Matična Portfolio Kategorija"
+
+#: library/portfolio-post-type.php:87
+msgid "Parent Portfolio Category:"
+msgstr "Matična Portfolio Kategorija:"
+
+#: library/portfolio-post-type.php:88
+msgid "Edit Portfolio Category"
+msgstr "Uredi Portfolio Kategoriju"
+
+#: library/portfolio-post-type.php:89
+msgid "Update Portfolio Category"
+msgstr "Osvježi Portfolio Kategoriju"
+
+#: library/portfolio-post-type.php:90
+msgid "Add New Portfolio Category"
+msgstr "Dodaj novu Portfolio Kategoriju"
+
+#: library/portfolio-post-type.php:91
+msgid "New Portfolio Category Name"
+msgstr "Naziv nove Portfolio Kategorije"
+
+#: library/portfolio-post-type.php:105
+msgid "Portfolio Tags"
+msgstr "Portfolio Oznake"
+
+#: library/portfolio-post-type.php:106
+msgid "Portfolio Tag"
+msgstr "Portfolio Oznaka"
+
+#: library/portfolio-post-type.php:107
+msgid "Search Portfolio Tags"
+msgstr "Pretraži Portfolio Oznake"
+
+#: library/portfolio-post-type.php:108
+msgid "All Portfolio Tags"
+msgstr "Sve Portfolio Oznake"
+
+#: library/portfolio-post-type.php:109
+msgid "Parent Portfolio Tag"
+msgstr "Matična Portfolio Oznaka"
+
+#: library/portfolio-post-type.php:110
+msgid "Parent Portfolio Tag:"
+msgstr "Matična Portfolio Oznaka:"
+
+#: library/portfolio-post-type.php:111
+msgid "Edit Portfolio Tag"
+msgstr "Uredi Portfolio Oznaku"
+
+#: library/portfolio-post-type.php:112
+msgid "Update Portfolio Tag"
+msgstr "Osvježi Portfolio Oznaku"
+
+#: library/portfolio-post-type.php:113
+msgid "Add New Portfolio Tag"
+msgstr "Dodaj novu Portfolio Oznaku"
+
+#: library/portfolio-post-type.php:114
+msgid "New Portfolio Tag Name"
+msgstr "Naziv nove Portfolio Oznake"

@@ -1,0 +1,465 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-08 21:50+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: 404.php:13
+msgid "Epic 404 - Article Not Found"
+msgstr ""
+
+#: 404.php:19
+msgid ""
+"The content you were looking for was not found, but maybe try looking again."
+msgstr ""
+
+#: 404.php:39
+msgid "What happened here?"
+msgstr ""
+
+#: archive-portfolio.php:23
+msgid "View full project"
+msgstr ""
+
+#: archive-portfolio.php:52 archive.php:95 index.php:68
+#: OLD_archive-portfolio.php:58 page-vjmswelcome.php:75 page.php:55
+#: single-portfolio.php:89 single.php:34 taxonomy-custom_cat.php:57
+msgid "Oops, Post Not Found!"
+msgstr ""
+
+#: archive-portfolio.php:55 archive.php:98 index.php:71
+#: OLD_archive-portfolio.php:61 page-vjmswelcome.php:78 page.php:58
+#: single-portfolio.php:92 single.php:37 taxonomy-custom_cat.php:60
+msgid "Uh Oh. Something is missing. Try double checking things."
+msgstr ""
+
+#: archive-portfolio.php:58 OLD_archive-portfolio.php:64
+msgid "This is the error message in the custom posty type archive template."
+msgstr ""
+
+#: archive.php:11 taxonomy-custom_cat.php:23
+msgid "Posts Categorized:"
+msgstr ""
+
+#: archive.php:16
+msgid "Posts Tagged:"
+msgstr ""
+
+#: archive.php:25
+msgid "Posts By:"
+msgstr ""
+
+#: archive.php:30
+msgid "Daily Archives:"
+msgstr ""
+
+#: archive.php:35
+msgid "Monthly Archives:"
+msgstr ""
+
+#: archive.php:40
+msgid "Yearly Archives:"
+msgstr ""
+
+#: archive.php:50 archive.php:65 archive.php:73 index.php:15 index.php:32
+#: index.php:45
+msgid "View full story"
+msgstr ""
+
+#: archive.php:52 index.php:17 search.php:19 post-formats/format-aside.php:10
+#: post-formats/format-audio.php:10 post-formats/format-chat.php:10
+#: post-formats/format-gallery.php:10 post-formats/format-image.php:10
+#: post-formats/format-link.php:10 post-formats/format-quote.php:10
+#: post-formats/format-status.php:10 post-formats/format-video.php:10
+#: post-formats/format.php:25
+#, php-format
+msgid "Posted %1$s by %2$s"
+msgstr ""
+
+#: archive.php:76 index.php:48
+msgid "More..."
+msgstr ""
+
+#: archive.php:101
+msgid "This is the error message in the archive.php template."
+msgstr ""
+
+#: comments.php:17
+msgid "<span>No</span> Comments"
+msgstr ""
+
+#: comments.php:17
+msgid "<span>One</span> Comment"
+msgstr ""
+
+#: comments.php:17
+msgid "<span>%</span> Comments"
+msgstr ""
+
+#: comments.php:38
+msgid "&larr; Previous Comments"
+msgstr ""
+
+#: comments.php:39
+msgid "More Comments &rarr;"
+msgstr ""
+
+#: comments.php:44
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:4
+msgid "Back to top"
+msgstr ""
+
+#: footer.php:11 library/bones.php:215
+msgid "Footer Links"
+msgstr ""
+
+#: footer.php:24
+msgid "This website is using cookies for analytics."
+msgstr ""
+
+#: functions.php:107
+msgid "300px × 300px"
+msgstr ""
+
+#: functions.php:108
+msgid "300px × 180px"
+msgstr ""
+
+#: functions.php:163
+msgid "Sidebar 1"
+msgstr ""
+
+#: functions.php:164
+msgid "The first (primary) sidebar."
+msgstr ""
+
+#: functions.php:219
+#, php-format
+msgid "<cite class=\"fn\">%1$s</cite> %2$s"
+msgstr ""
+
+#: functions.php:219
+msgid "(Edit)"
+msgstr ""
+
+#: functions.php:220 OLD_archive-portfolio.php:33 taxonomy-custom_cat.php:33
+msgid "F jS, Y"
+msgstr ""
+
+#: functions.php:225
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: header.php:69 header.php:70
+msgid "Search for:"
+msgstr ""
+
+#: header.php:70
+msgid "Search..."
+msgstr ""
+
+#: header.php:82 library/bones.php:214
+msgid "The Main Menu"
+msgstr ""
+
+#: index.php:74
+msgid "This is the error message in the index.php template."
+msgstr ""
+
+#: OLD_archive-portfolio.php:33
+#, php-format
+msgid ""
+"Posted <time class=\"updated\" datetime=\"%1$s\" itemprop=\"datePublished\">"
+"%2$s</time> by <span class=\"author\">%3$s</span>"
+msgstr ""
+
+#: page-vjmswelcome.php:23
+msgid "From ideas to ideal"
+msgstr ""
+
+#: page-vjmswelcome.php:24
+msgid "Want a great website? Original logo, slogan or creative ad?"
+msgstr ""
+
+#: page-vjmswelcome.php:25
+msgid "Ladies and Gentlemen..."
+msgstr ""
+
+#: page-vjmswelcome.php:57 page.php:37 single-portfolio.php:54
+#: post-formats/format-aside.php:38 post-formats/format-audio.php:38
+#: post-formats/format-chat.php:38 post-formats/format-gallery.php:38
+#: post-formats/format-image.php:38 post-formats/format-link.php:38
+#: post-formats/format-quote.php:38 post-formats/format-status.php:38
+#: post-formats/format-video.php:38 post-formats/format.php:54
+msgid "Pages:"
+msgstr ""
+
+#: page-vjmswelcome.php:65
+msgid "Yep, that's me!"
+msgstr ""
+
+#: page-vjmswelcome.php:66
+msgid "Contact me"
+msgstr ""
+
+#: page-vjmswelcome.php:66
+msgid "Contact"
+msgstr ""
+
+#: page-vjmswelcome.php:81
+msgid "This is the error message in the page-custom.php template."
+msgstr ""
+
+#: page-vjmswelcome.php:96
+msgid "- I like them, and I trust them -"
+msgstr ""
+
+#: page.php:61
+msgid "This is the error message in the page.php template."
+msgstr ""
+
+#: search.php:8
+msgid "Search Results for:"
+msgstr ""
+
+#: search.php:30 library/bones.php:290
+msgid "Read more &raquo;"
+msgstr ""
+
+#: search.php:37 post-formats/format-link.php:48
+#: post-formats/format-quote.php:48 post-formats/format.php:66
+#, php-format
+msgid "Filed under: %1$s"
+msgstr ""
+
+#: search.php:40 post-formats/format-aside.php:47
+#: post-formats/format-audio.php:47 post-formats/format-chat.php:47
+#: post-formats/format-gallery.php:47 post-formats/format-image.php:47
+#: post-formats/format-link.php:50 post-formats/format-quote.php:50
+#: post-formats/format-status.php:47 post-formats/format-video.php:47
+#: post-formats/format.php:68
+msgid "Tags:"
+msgstr ""
+
+#: search.php:54
+msgid "Sorry, No Results."
+msgstr ""
+
+#: search.php:57
+msgid "Try your search again."
+msgstr ""
+
+#: sidebar.php:16
+msgid "This is a widget ready area. Add some and they will appear here."
+msgstr ""
+
+#: single-portfolio.php:63 post-formats/format.php:74
+msgid "Previous post"
+msgstr ""
+
+#: single-portfolio.php:66 post-formats/format.php:77
+msgid "Next post"
+msgstr ""
+
+#: single-portfolio.php:73
+msgid "Custom Tags:"
+msgstr ""
+
+#: single-portfolio.php:95
+msgid "This is the error message in the single-custom_type.php template."
+msgstr ""
+
+#: single.php:40
+msgid "This is the error message in the single.php template."
+msgstr ""
+
+#: taxonomy-custom_cat.php:33
+#, php-format
+msgid ""
+"Posted <time class=\"updated\" datetime=\"%1$s\" itemprop=\"datePublished\">"
+"%2$s</time> by <span class=\"author\">%3$s</span> <span class=\"amp\">&</"
+"span> filed under %4$s."
+msgstr ""
+
+#: taxonomy-custom_cat.php:39
+msgid "Read More &raquo;"
+msgstr ""
+
+#: taxonomy-custom_cat.php:63
+msgid "This is the error message in the taxonomy-custom_cat.php template."
+msgstr ""
+
+#: library/admin.php:82
+msgid "j F Y @ g:i a"
+msgstr ""
+
+#: library/admin.php:94
+msgid "Recently on Themble (Customize on admin.php)"
+msgstr ""
+
+#: library/admin.php:141
+msgid ""
+"<span id=\"footer-thankyou\">Developed by <a href=\"http://malistudio.com\" "
+"target=\"_blank\">mali studio</a></span>."
+msgstr ""
+
+#: library/bones.php:80
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: library/bones.php:245
+msgid "No Related Posts Yet!"
+msgstr ""
+
+#: library/bones.php:290
+msgid "Read "
+msgstr ""
+
+#: library/portfolio-post-type.php:31
+msgid "Portfolio"
+msgstr ""
+
+#: library/portfolio-post-type.php:32
+msgid "Portfolio Post"
+msgstr ""
+
+#: library/portfolio-post-type.php:33
+msgid "All Portfolio Posts"
+msgstr ""
+
+#: library/portfolio-post-type.php:34
+msgid "Add New"
+msgstr ""
+
+#: library/portfolio-post-type.php:35
+msgid "Add New Portfolio Post"
+msgstr ""
+
+#: library/portfolio-post-type.php:36
+msgid "Edit"
+msgstr ""
+
+#: library/portfolio-post-type.php:37
+msgid "Edit Portfolio Post"
+msgstr ""
+
+#: library/portfolio-post-type.php:38
+msgid "New Portfolio Post"
+msgstr ""
+
+#: library/portfolio-post-type.php:39
+msgid "View Portfolio Post"
+msgstr ""
+
+#: library/portfolio-post-type.php:40
+msgid "Search Portfolio Post"
+msgstr ""
+
+#: library/portfolio-post-type.php:41
+msgid "Nothing found in the Database."
+msgstr ""
+
+#: library/portfolio-post-type.php:42
+msgid "Nothing found in Trash"
+msgstr ""
+
+#: library/portfolio-post-type.php:45
+msgid "This is the portfolio post type"
+msgstr ""
+
+#: library/portfolio-post-type.php:82
+msgid "Portfolio Categories"
+msgstr ""
+
+#: library/portfolio-post-type.php:83
+msgid "Portfolio Category"
+msgstr ""
+
+#: library/portfolio-post-type.php:84
+msgid "Search Portfolio Categories"
+msgstr ""
+
+#: library/portfolio-post-type.php:85
+msgid "All Portfolio Categories"
+msgstr ""
+
+#: library/portfolio-post-type.php:86
+msgid "Parent Portfolio Category"
+msgstr ""
+
+#: library/portfolio-post-type.php:87
+msgid "Parent Portfolio Category:"
+msgstr ""
+
+#: library/portfolio-post-type.php:88
+msgid "Edit Portfolio Category"
+msgstr ""
+
+#: library/portfolio-post-type.php:89
+msgid "Update Portfolio Category"
+msgstr ""
+
+#: library/portfolio-post-type.php:90
+msgid "Add New Portfolio Category"
+msgstr ""
+
+#: library/portfolio-post-type.php:91
+msgid "New Portfolio Category Name"
+msgstr ""
+
+#: library/portfolio-post-type.php:105
+msgid "Portfolio Tags"
+msgstr ""
+
+#: library/portfolio-post-type.php:106
+msgid "Portfolio Tag"
+msgstr ""
+
+#: library/portfolio-post-type.php:107
+msgid "Search Portfolio Tags"
+msgstr ""
+
+#: library/portfolio-post-type.php:108
+msgid "All Portfolio Tags"
+msgstr ""
+
+#: library/portfolio-post-type.php:109
+msgid "Parent Portfolio Tag"
+msgstr ""
+
+#: library/portfolio-post-type.php:110
+msgid "Parent Portfolio Tag:"
+msgstr ""
+
+#: library/portfolio-post-type.php:111
+msgid "Edit Portfolio Tag"
+msgstr ""
+
+#: library/portfolio-post-type.php:112
+msgid "Update Portfolio Tag"
+msgstr ""
+
+#: library/portfolio-post-type.php:113
+msgid "Add New Portfolio Tag"
+msgstr ""
+
+#: library/portfolio-post-type.php:114
+msgid "New Portfolio Tag Name"
+msgstr ""
